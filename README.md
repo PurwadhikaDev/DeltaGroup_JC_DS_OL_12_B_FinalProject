@@ -4,7 +4,7 @@ Nuno Antonio, Ana Almeida, and Luis Nunes for the publication Data in Brief, Vol
 
 Tableau Dashboard [link](https://public.tableau.com/app/profile/anna.charieninna7072/viz/HotelBookingDemand_17114718998920/Dashboard1) 
 
-<br>Jika ada image yang tidak bisa diload, silahkan kunjungi [link ini]([https://nbviewer.org/github/OckyDaniel/Purwadhika-Capstone-Project_Module-3/blob/main/Ecommerce_Capstone_Project_Module_3-3.ipynb](https://nbviewer.org/github/PurwadhikaDev/DeltaGroup_JC_DS_OL_12_B_FinalProject/blob/main/Hotel%20Booking%20Demand.ipynb)).
+<br>Jika ada image yang tidak bisa diload, silahkan kunjungi [link ini](https://nbviewer.org/github/PurwadhikaDev/DeltaGroup_JC_DS_OL_12_B_FinalProject/blob/main/Hotel%20Booking%20Demand.ipynb)
 
 # **Hotel Booking Demand***
 
