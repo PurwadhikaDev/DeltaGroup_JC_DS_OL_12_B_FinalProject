@@ -15,6 +15,7 @@ Beberapa tahun lalu, industri hotel telah mengalami perubahan dengan sebagian be
 Menganalisis kinerja bisnis adalah komponen penting untuk mencapai kesuksesan bagi perusahaan. Melalui analisis yang cermat, perusahaan dapat mengevaluasi kinerja bisnis mereka.
 Dalam konteks industri perhotelan, memahami perilaku pelanggan menjadi sangat penting. Pemahaman ini memungkinkan perusahaan untuk menemukan faktor-faktor yang memengaruhi pelanggan saat mereka memesan hotel. Selain itu, ini memungkinkan perusahaan untuk mengenali produk atau layanan mana yang kurang berhasil di pasar sehingga layanan bisa lebih customer centric.
 Analisis yang cermat selanjutnya dapat berguna untuk merancang strategi bisnis yang efektif, yang pada akhirnya meningkatkan customer experience dan membuka jalan menuju bisnis yang berkelanjutan.
+
 Target :
 0 : Tidak melakukan pembatalan pemesanan
 1 : Melakukan pembatalan pemesanan
@@ -73,18 +74,18 @@ Model yang dihasilkan sangat dipengaruhi oleh beberapa fitur 3 fitur paling berp
 
 Limitasi Model :
 Model ini hanya berlaku pada rentang data yang digunakan pada pemodelan ini yaitu :
-lead time yaitu range antara 0-737
-arrival date week number range antara 1-53
-adults range dari 0-55
-children range dari 0-10
-babies range dari 0-10
-previous cancellations range dari 0-26
-previous bookings not canceled range antara 0-72
-booking_changes range antara 0-18
-days_in_waiting_list range antara 0-391
-adr range antara 0-226.84
-required_car_parking_spaces range antara 0-8
-total_of_special_requests range antara 0-5
+- lead time yaitu range antara 0-737
+- arrival date week number range antara 1-53
+- adults range dari 0-55
+- children range dari 0-10
+- babies range dari 0-10
+- previous cancellations range dari 0-26
+- previous bookings not canceled range antara 0-72
+- booking_changes range antara 0-18
+- days_in_waiting_list range antara 0-391
+- adr range antara 0-226.84
+- required_car_parking_spaces range antara 0-8
+- total_of_special_requests range antara 0-5
 
 # Conclusions
 
