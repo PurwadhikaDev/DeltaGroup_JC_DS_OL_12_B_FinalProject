@@ -88,7 +88,7 @@ total_of_special_requests range antara 0-5
 
 # Conclusions
 
-#####**1. Customer behaviour analysis/Customer Preferences**
+**1. Customer behaviour analysis/Customer Preferences**
 
 a. Pada tahun 2015-2018 ada sekitar 27% tamu yang melakukan pemesanan dengan total seluruh pemesanan sekitar 84.714.
 
@@ -98,13 +98,13 @@ c. Di City Hotel, sebagian besar tamu memilih untuk menginap selama 3 malam, sed
 
 d. Sekitar 59% tamu melakukan pemesanan melalui agen perjalanan online.
 
-#####**2. Geographic analysis**
+**2. Geographic analysis**
 
 Portugal merupakan negara yang mendominasi jumlah tamu yang paling banyak melakukan reservasi. Di posisi kedua adalah United Kingdom (Inggris), diikuti oleh Prancis, Spanyol, dan Jerman. Menariknya, kelima negara ini semuanya terletak di Benua Eropa.
 
 Hal ini menunjukkan bahwa mayoritas tamu yang mengunjungi destinasi tersebut berasal dari negara-negara Eropa. Faktor-faktor seperti kedekatan geografis dan konektivitas transportasi mempengaruhi preferensi wisatawan untuk mengunjungi negara-negara tetangga atau terdekat di Benua Eropa.
 
-#####**3. Price analysis**
+**3. Price analysis**
 
 a. Harga kamar `resort hotel` per malam berkisar dari 50- 165 dolar per orang.
 
