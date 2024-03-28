@@ -6,7 +6,9 @@ Tableau Dashboard [link](https://public.tableau.com/app/profile/anna.charieninna
 
 <br>Jika ada image yang tidak bisa diload, silahkan kunjungi [link ini](https://nbviewer.org/github/PurwadhikaDev/DeltaGroup_JC_DS_OL_12_B_FinalProject/blob/main/Hotel%20Booking%20Demand.ipynb)
 
-# **Hotel Booking Demand***
+### Created By : Ocky Daniel & Anna Charieninna
+
+# **Hotel Booking Demand**
 
 Context :
 Beberapa tahun lalu, industri hotel telah mengalami perubahan dengan sebagian besar pemesanan kini dilakukan secara online seperti Booking.com (sumber). Akibatnya, pelanggan telah terbiasa dengan kebijakan pembatalan gratis. Bahkan, sebuah studi yang dilakukan oleh D-Edge Hospitality Solutions menemukan bahwa tingkat pembatalan melalui semua saluran telah meningkat sebesar 6% selama empat tahun terakhir, mencapai hampir 40% pada tahun 2018 (sumber) dan memperoleh kerugian tertinggi pada tahun 2016 yaitu mencapai 2.8 juta Euro.
@@ -86,18 +88,44 @@ total_of_special_requests range antara 0-5
 
 # Conclusions
 
-TANPA MENGGUNAKAN MACHINE LEARNING
+#####**1. Customer behaviour analysis/Customer Preferences**
+
+a. Pada tahun 2015-2018 ada sekitar 27% tamu yang melakukan pemesanan dengan total seluruh pemesanan sekitar 84.714.
+
+b. Pelanggan yang paling banyak melakukan booking dan cancellation biasanya berada di pertengahan tahun yaitu di Juli-Agustus dan di akhir sampai awal tahun cendrung menurun baik dari city hotel maupun resort hotel. Jumlah booking dan cancel cendrung sama trennya, semakin banyak ada nya booking semakin banyak juga yang melakukan cancel.
+
+c. Di City Hotel, sebagian besar tamu memilih untuk menginap selama 3 malam, sedangkan di  Resort Hotel, sebagian besar tamu lebih memilih menginap selama 1 malam. Karena mungkin resort hotel kebih tinggi daripada city hotels dan tamu yang menginap di city hotels memiliki tujuan perjalanan yang telah terdiversifikasi.
+
+d. Sekitar 59% tamu melakukan pemesanan melalui agen perjalanan online.
+
+#####**2. Geographic analysis**
+
+Portugal merupakan negara yang mendominasi jumlah tamu yang paling banyak melakukan reservasi. Di posisi kedua adalah United Kingdom (Inggris), diikuti oleh Prancis, Spanyol, dan Jerman. Menariknya, kelima negara ini semuanya terletak di Benua Eropa.
+
+Hal ini menunjukkan bahwa mayoritas tamu yang mengunjungi destinasi tersebut berasal dari negara-negara Eropa. Faktor-faktor seperti kedekatan geografis dan konektivitas transportasi mempengaruhi preferensi wisatawan untuk mengunjungi negara-negara tetangga atau terdekat di Benua Eropa.
+
+#####**3. Price analysis**
+
+a. Harga kamar `resort hotel` per malam berkisar dari 50- 165 dolar per orang.
+
+b. Harga kamar `city hotel` per malam berkisar dari 85 - 125 dolar per orang.
+
+c. Harga kamar `resort hotel` tertinggi sekitar bulan ke-8 (Agustus, akhir musim panas), sedangkan harga `city hotel` puncaknya di bulan ke-5 (Mei, akhir musim semi) dan bulan ke-9 (September, awal musim gugur).
+
+TANPA MENGGUNAKAN MACHINE LEARNING:
 Dengan asumsi tarif harian rata-rata hotel sebesar 100 Euro, maka simulasinya sebagai berikut:
 100 Euro x 61.675 (Customer Booking) = 61.675.000 Euro (Revenue)
 100 Euro X 23.039 (Customer Canceled) = 23.039.000 Euro (Lost Revenue)
-DENGAN MENGGUNAKAN MACHINE LEARNING
+
+DENGAN MENGGUNAKAN MACHINE LEARNING:
 Dengan asumsi yang sama jika menggunakan machine learning maka simulasinya adalah sebagai berikut:
 (TP+TN): (11280+3159) x 100 Euro = 14.439.000 Euro
 (FP+FN): (1055+1449) x 100 Euro = 2.504.000 Euro
 Dikarenakan kita menggunakan test data sebesar 20% maka, perhitungan asumsi dikali 5 yaitu sebagai berikut :
 14.439.000 Euro x 5 = 72.195.000 Euro (Revenue)
 2.504.000 Euro x 5 = 12.520.000 Euro (Lost Revenue)
-PERBANDINGAN PENGGUNAAN MACHINE LEARNING
+
+PERBANDINGAN PENGGUNAAN MACHINE LEARNING:
 Sebelum pakai ML: Hotel Revenue sebesar 61.675.000 Euro.
 Setelah menggunakan ML: Hotel Revenue menjadi 72.195.000Euro.
 Sehingga Profit yang dihasilkan dari selisih Revenue adalah sebesar:
@@ -107,21 +135,21 @@ Dapat disimpulkan bahwa Machine Learning dengan menggunakan algoritma XGBoost se
 # Recommendations
 
 For Model :
-Mengumpulkan lebih banyak data khususnya pada minority class.
-Menambahkan parameter lain dalam hyperparameter tuning.
-Menambahkan ID customer atau booking ID untuk memastikan dan mengetahui data yang duplikat.
-Meminimalisir kesalahan penulisan data dan memastikan data yang diperoleh tidak ada yang kosong atau tidak terisi.
-Mencoba ML algorithm diluar ML algorithm yang dipakai di project ini, dan mencoba dengan hyperparamater tuning kembali seperti SMOTENC dan lain sebagainya.
+- Mengumpulkan lebih banyak data khususnya pada minority class.
+- Menambahkan parameter lain dalam hyperparameter tuning.
+- Menambahkan ID customer atau booking ID untuk memastikan dan mengetahui data yang duplikat.
+- Meminimalisir kesalahan penulisan data dan memastikan data yang diperoleh tidak ada yang kosong atau tidak terisi.
+- Mencoba ML algorithm diluar ML algorithm yang dipakai di project ini, dan mencoba dengan hyperparamater tuning kembali seperti SMOTENC dan lain sebagainya.
 
 For Business:
-Mengembangkan strategi untuk meningkatkan ketersediaan lahan parkir dapat membantu mengurangi pembatalan, seperti menambah fasilitas parkir tambahan atau menawarkan paket parkir tambahan.
-Menerapkan kebijakan deposit yang lebih ketat atau meningkatkan nilai deposit dapat membantu mengurangi kemungkinan pembatalan, karena pelanggan akan lebih berpikir dua kali sebelum membatalkan pemesanan mereka.
-Memperhatikan riwayat pembatalan sebelumnya dapat membantu dalam menilai risiko pembatalan untuk setiap pemesanan.
-Fokus pada upaya pemasaran yang lebih kuat untuk menarik lebih banyak pemesanan di hotel resor (karena pemesanannya masih cenderung lebih sedikit) serta mengembangkan kebijakan pembatalan yang lebih menarik untuk menarik minat pelanggan.
-Menawarkan paket atau promosi khusus untuk menginsentifkan tamu untuk memperpanjang masa menginap mereka di hotel resort, seperti diskon untuk menginap lebih lama.
-Meningkatkan kerjasama dengan agen perjalanan online atau mengembangkan strategi pemasaran dengan menggunakan gimmick-gimmick.
-Mengidentifikasi tren perjalanan dari negara-negara tertentu dan menyesuaikan strategi pemasaran untuk menarik lebih banyak tamu dari negara-negara yang potensial.
-Fokus pada tamu lokal, karena tamu dari kedua hotel didominasi oleh tamu lokal (Portugal) dan sekitar benua Eropa sehingga sangat penting untuk memberikan kenyamanan dan impresi menginap yang baik untuk mengurangi tingkat pembatalan.
-Menyesuaikan strategi harga dan promosi untuk memaksimalkan pendapatan dari tipe kamar yang paling diminati (tipe A) agar kamar lainnya agar dapat bersaing dengan tipe kamar A.
+- Mengembangkan strategi untuk meningkatkan ketersediaan lahan parkir dapat membantu mengurangi pembatalan, seperti menambah fasilitas parkir tambahan atau menawarkan paket parkir tambahan.
+- Menerapkan kebijakan deposit yang lebih ketat atau meningkatkan nilai deposit dapat membantu mengurangi kemungkinan pembatalan, karena pelanggan akan lebih berpikir dua kali sebelum membatalkan pemesanan mereka.
+- Memperhatikan riwayat pembatalan sebelumnya dapat membantu dalam menilai risiko pembatalan untuk setiap pemesanan.
+- Fokus pada upaya pemasaran yang lebih kuat untuk menarik lebih banyak pemesanan di hotel resor (karena pemesanannya masih cenderung lebih sedikit) serta mengembangkan kebijakan pembatalan yang lebih menarik untuk menarik minat pelanggan.
+- Menawarkan paket atau promosi khusus untuk menginsentifkan tamu untuk memperpanjang masa menginap mereka di hotel resort, seperti diskon untuk menginap lebih lama.
+- Meningkatkan kerjasama dengan agen perjalanan online atau mengembangkan strategi pemasaran dengan menggunakan gimmick-gimmick.
+- Mengidentifikasi tren perjalanan dari negara-negara tertentu dan menyesuaikan strategi pemasaran untuk menarik lebih banyak tamu dari negara-negara yang potensial.
+- Fokus pada tamu lokal, karena tamu dari kedua hotel didominasi oleh tamu lokal (Portugal) dan sekitar benua Eropa sehingga sangat penting untuk memberikan kenyamanan dan impresi menginap yang baik untuk mengurangi tingkat pembatalan.
+- Menyesuaikan strategi harga dan promosi untuk memaksimalkan pendapatan dari tipe kamar yang paling diminati (tipe A) agar kamar lainnya agar dapat bersaing dengan tipe kamar A.
 
 
